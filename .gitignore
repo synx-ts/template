@@ -3,6 +3,7 @@
 /node_modules
 /src
 /.gitattributes
-/.package-lock.json
-/.package.json
+/package-lock.json
+/package.json
+/tsconfig.json
 *.tsbuildinfo
