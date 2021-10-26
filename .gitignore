@@ -1,8 +1,2 @@
-/.vscode
-/include
 /node_modules
-/.gitattributes
-/package-lock.json
-/package.json
-/tsconfig.json
 *.tsbuildinfo
