@@ -1,7 +1,6 @@
 /.vscode
 /include
 /node_modules
-/src
 /.gitattributes
 /package-lock.json
 /package.json
