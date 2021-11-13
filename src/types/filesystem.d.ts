@@ -10,7 +10,7 @@ declare function writefile(path: string, contents: string): void;
 declare function appendfile(path: string, content: string): void;
 
 /** Loads in the contents of a file as a chunk and returns it if compilation is successful. Otherwise, if an error has occurred during compilation, nil followed by the error message will be returned. */
-declare function loadfile(path: string): ((...args: any[]) => any) | undefined
+declare function loadfile(path: string): ((...args: any[]) => any) | undefined;
 
 /** Returns a table of files in folder. */
 declare function listfiles(folder: string): String[];

@@ -1,7 +1,7 @@
 // Environment API:
 
 /** Returns the environment that will be applied to each script ran by Synapse. */
-declare function getgenv(): { [index: string]: any };
+declare function getgenv(): SynGlobals;
 
 /** Returns the global environment for the LocalScript state. */
 declare function getrenv(): void;

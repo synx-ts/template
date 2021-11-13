@@ -20,6 +20,12 @@
 		"outDir": "out",
 		"baseUrl": "src",
 		"incremental": true,
-		"tsBuildInfoFile": "out/tsconfig.tsbuildinfo"
+		"tsBuildInfoFile": "out/tsconfig.tsbuildinfo",
+
+        "plugins": [
+            {
+                "transformer": "rbxts-transformer-services"
+            }
+        ]
 	},
 }
