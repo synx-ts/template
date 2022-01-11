@@ -10,4 +10,4 @@ declare function getcallingscript(): LocalScript | ModuleScript | undefined;
 declare function getscriptclosure(Script: LocalScript | ModuleScript): (...args: any[]) => any;
 
 /** Returns a SHA384 hash of the scripts bytecode. You can use this to detect changes of a script. */
-declare function getscripthash(Script: LocalScript | ModuleScript): String;
+declare function getscripthash(Script: LocalScript | ModuleScript): string;

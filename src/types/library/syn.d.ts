@@ -9,18 +9,18 @@ interface syn {
 	protect_gui: (obj: Instance) => void;
 	unprotect_gui: (obj: Instance) => void;
 	is_beta: () => boolean;
-	request: (data: { Url: String; Method?: string; Headers?: {}; Cookies?: {}; Body?: String }) => {
+	request: (data: { Url: string; Method?: string; Headers?: {}; Cookies?: {}; Body?: string }) => {
 		Success: boolean;
 		StatusCode: number;
-		StatusMessage: String;
+		StatusMessage: string;
 		Headers: {};
 		Cookies: {};
-		Body: String;
+		Body: string;
 	};
-	secure_call: <F extends (...args: unknown[]) => any>(
+	secure_call: <F extends (...args: unknown[]) => unknown[]>(
 		func: F,
 		script: LocalScript | ModuleScript,
-		...args: ReturnType<F>
+		...args: LuaTuple<ReturnType<F>>
 	) => void;
 }
 declare const syn: syn;

@@ -28,7 +28,7 @@ declare function getloadedmodules(): ModuleScript[];
 declare function getconnections(obj: RBXScriptSignal): RBXScriptConnection;
 
 /** Fires all the connections connected to the signal Signal with Args. */
-declare function firesignal(Signal: RBXScriptSignal, ...args: any[]): void;
+declare function firesignal(Signal: RBXScriptSignal, ...args: unknown[]): void;
 
 /** Fires the designated ClickDetector with provided Distance. If Distance isn't provided, it will default to 0. */
 declare function fireclickdetector(Detector: ClickDetector, Distance?: number): void;

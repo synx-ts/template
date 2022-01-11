@@ -13,7 +13,7 @@ declare function getnamecallmethod(): string;
 declare function setnamecallmethod(Method: string): void;
 
 /** Returns a Content string that can be used as a fake Asset ID for GUI elements. Please note this will only affect your client. */
-declare function getsynasset(path: string): any;
+declare function getsynasset(path: string): string;
 
 /** Gets a list of special properties for MeshParts, UnionOperations, and Terrain instances. */
 declare function getspecialinfo(obj: Instance): void;

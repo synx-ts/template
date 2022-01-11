@@ -13,7 +13,7 @@ declare function appendfile(path: string, content: string): void;
 declare function loadfile(path: string): ((...args: any[]) => any) | undefined;
 
 /** Returns a table of files in folder. */
-declare function listfiles(folder: string): String[];
+declare function listfiles(folder: string): string[];
 
 /** Returns if path is a file or not. */
 declare function isfile(path: string): boolean;
