@@ -16,7 +16,7 @@ interface CoreGui extends PlayerGui {
 
 // Type Overrides
 interface DataModel {
-	HttpGet(http: string): string;
+	HttpGet(http: string): string | undefined;
 }
 
 interface Services {
